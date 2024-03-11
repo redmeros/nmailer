@@ -1,0 +1,25 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "MailerConfig": {
+    "RepoDir": "W:\\",
+    "NormalProjectRegex": "(?m)^(?P<projectNo>\\d+)\\s*-\\s*(?P<projectName>.+)$",
+    "XxProjectRegex": "(?m)^(?P<projectNo>XX\\d+)\\s*-\\s*(?P<projectName>.+)$",
+    "SubjectRegex": "@(?<ProjectNo>\\S+)\\s?\\[(?<Subject>.+)\\]",
+    "CheckInterval": 5,
+    "Username": "arch@dcssc.local",
+    "Password": "archiwum",
+    "Server": "mail.dcssc.local",
+    "ImapPort": 143,
+    "SmtpPort": 587,
+    "SmtpAuthenticate": true,
+    "InboxToUse": "INBOX",
+    "CorrespondenceDirectoryPattern": "{ProjectNo}-KOR",
+    "AttachmentDirName": "attachments",
+    "SmtpSenderAddress": "arch@dcssc.local"
+  }
+}
