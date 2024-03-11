@@ -56,7 +56,5 @@ public class Worker : BackgroundService
             sb.AppendLine($"{prop.Name} : {prop.GetValue(_config)}");
         }
         _logger.Log(lvl, "{Props}", sb.ToString());
-
-        
     }
 }

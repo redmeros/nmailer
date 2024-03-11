@@ -11,8 +11,8 @@
     "XxProjectRegex": "(?m)^(?P<projectNo>XX\\d+)\\s*-\\s*(?P<projectName>.+)$",
     "SubjectRegex": "@(?<ProjectNo>\\S+)\\s?\\[(?<Subject>.+)\\]",
     "CheckInterval": 5,
-    "Username": "arch@dcssc.local",
-    "Password": "archiwum",
+    "Username": "example@example.com",
+    "Password": "example",
     "Server": "mail.dcssc.local",
     "ImapPort": 143,
     "SmtpPort": 587,
@@ -20,6 +20,6 @@
     "InboxToUse": "INBOX",
     "CorrespondenceDirectoryPattern": "{ProjectNo}-KOR",
     "AttachmentDirName": "attachments",
-    "SmtpSenderAddress": "arch@dcssc.local"
+    "SmtpSenderAddress": "arch@example.com"
   }
 }

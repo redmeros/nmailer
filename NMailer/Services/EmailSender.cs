@@ -73,6 +73,7 @@ public class EmailSender : IEmailSender
         
         _smtpClient.ServerCertificateValidationCallback = (_, _, _, _) => true;
         await _smtpClient.ConnectAsync(_config.Server, _config.SmtpPort, false, ct);
+        // to jest gdyby jarek włączył autentykację
         if (_config.SmtpAuthenticate)
         {
             await _smtpClient.AuthenticateAsync(_config.Username, _config.Password, ct);

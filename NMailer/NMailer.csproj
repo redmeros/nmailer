@@ -25,4 +25,12 @@
     <ItemGroup>
       <Folder Include="ConfigModels\" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="appsettings.json.example">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
 </Project>
