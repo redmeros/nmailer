@@ -10,6 +10,8 @@ public sealed class MailerConfig
     public string Server { get; set; } = default!;
     public int ImapPort { get; set; }
     public int SmtpPort { get; set; }
+    
+    public bool SmtpAuthenticate { get; set; }
     public string CorrespondenceDirectoryPattern { get; set; } = default!;
     public string AttachmentDirName { get; set; } = default!;
 

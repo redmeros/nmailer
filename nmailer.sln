@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmailer", "nmailer\nmailer.csproj", "{EDA8F0C3-B2DE-4F4F-B475-E9E6449DAEE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMailer", "NMailer\NMailer.csproj", "{EDA8F0C3-B2DE-4F4F-B475-E9E6449DAEE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

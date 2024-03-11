@@ -73,7 +73,10 @@ public class EmailSender : IEmailSender
         
         _smtpClient.ServerCertificateValidationCallback = (_, _, _, _) => true;
         await _smtpClient.ConnectAsync(_config.Server, _config.SmtpPort, false, ct);
-        // await _smtpClient.AuthenticateAsync(_config.Username, _config.Password, ct);
+        if (_config.SmtpAuthenticate)
+        {
+            await _smtpClient.AuthenticateAsync(_config.Username, _config.Password, ct);
+        }
         await _smtpClient.SendAsync(reply, ct);
         await _smtpClient.DisconnectAsync(true, ct);
         _logger.LogInformation("Error info was sent to: {ErrorSendAddress}", reply.To);
